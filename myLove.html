@@ -338,12 +338,12 @@
 				    };
 
 				    function fn(arr){
-				    	var step = Math.round(arr.length / 36); 
+				    	var step = Math.round(arr.length / 32); 
 				    	for( var i = 0; i < 7; i++ ){
 				    		num = arr[i * step];
 				    		k = (num) / aImg[i].offsetHeight * 100;
 							m = 100 - k;
-							n = (m-70)>0?(m-70):0;
+							n = (m-60)>0?(m-60):3;
 				    		aImg[i].style.cssText = "transform:translate3d(0," + n +"%,0)";
 							if(i==0){
 								//nowMusic.style.background = 'rgb('+ num +','+ num +','+ num +')';
