@@ -9,7 +9,6 @@ window.onload=function()
     var $bannerNext = $(".banner_next"),
     $bannerImg = $("#banner_img");
     // 点击进入
-     $bannerNext.css({left:($(window).width()- $bannerNext.outerWidth())/2});
      $bannerNext.on('click',function(){
         boomEffect( );
         $('.banner_txt').removeClass('banner_txt');
